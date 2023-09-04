@@ -34,7 +34,7 @@
                 if($row > 0){
                 while($ro = mysqli_fetch_array($result)){
                 ?>
-                <tr style="color:red;">
+                <tr style="background-color:#dd0000; color:white;">
                     <td>
                         <?php echo $ro['id']; ?>
                     </td>
@@ -42,9 +42,11 @@
                     <td><?php echo $ro['whatsapp']; ?></td>
                     <td><?php echo $ro['email']; ?></td>
                     <td>
-                        <button class="btn btn-success">Edit</button>
+                        <a href="edit.php?id=<?php echo $ro['id']; ?>">
+                            <button class="btn btn-success">Edit</button>
+                        </a>
                         <a href="actions/delete.php?id=<?php echo $ro['id']; ?>">
-                            <button class="btn btn-danger">Delete</button>
+                            <button class="btn btn-warning">Delete</button>
                         </a>
                     </td>
                 </tr>
