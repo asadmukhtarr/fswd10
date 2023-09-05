@@ -15,7 +15,7 @@
           Edit Here
         </div>
         <div class="card-body">
-          <form action="actions/register.php" method="post">
+          <form action="actions/update.php?id=<?php echo $row['id']; ?>" method="post">
             <div class="form-group">
               <label for="">Name</label>
               <input type="text" class="form-control" value="<?php echo $row['name']; ?>" name="name" />
