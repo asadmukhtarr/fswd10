@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -28,6 +29,9 @@
       <?php } else { ?>
       <li class="nav-item active">
         <a class="nav-link" href="register.php">My Profile <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="messages.php"> Messages <span class="badge badge-danger">23</span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="record.php"> All Records <span class="sr-only">(current)</span></a>
