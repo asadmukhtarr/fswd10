@@ -39,6 +39,9 @@
       <li class="nav-item active">
         <a class="nav-link" href="actions/logout.php">Logout <span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><?php echo $_SESSION['user']; ?> <span class="sr-only">(current)</span></a>
+      </li>
       <?php
       } ?>
     </ul>
